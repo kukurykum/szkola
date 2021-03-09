@@ -1,0 +1,1 @@
+program pobierający dane pogodowe z kilku serwisów i wyliczający średnią temperaturę, wiatr i ciśnienie

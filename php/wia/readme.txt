@@ -1,0 +1,1 @@
+index.php jest glownym plikiem (stroną główną). referaty znajduja sie w bazie danych.

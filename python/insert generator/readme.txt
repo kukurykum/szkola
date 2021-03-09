@@ -1,0 +1,1 @@
+stworzyłem na szybko na potrzeby wygenerowania dużej ilości losowych danych (moja jest tylko funkcja tworząca tekst)

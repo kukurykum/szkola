@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Monospace;
+    background-color: #323437;
+    /*margin: 0;*/
+}
+
+a{
+    text-decoration: none;
+    color: #ca4754;
+}
+
+/* Style the header */
+header {
+    background-color: #323437;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: #e2b714;
+    border: 2px dashed #646669;
+}
+
+/* Create two columns/boxes that floats next to each includes */
+nav {
+    float: left;
+    width: 10%;
+    background-color: #323437;
+    padding: 20px;
+    border-right: 2px dashed #646669;
+    border-left: 2px dashed #646669;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+    align-items: center;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+ul li {
+    padding-bottom: 20px;
+}
+
+li a {
+    color: #646669;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+li a:hover{
+    color: #ca4754;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 90%;
+    color: #e2b714;
+    background-color: #323437;
+    border-right: 2px dashed #646669;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #323437;
+    padding: 10px;
+    text-align: center;
+    color: #e2b714;
+    border: 2px dashed #646669;
+
+}
+
+input[name='tekst'] {
+    font-family: Monospace;
+    height: 50px;
+    background-color: #646669;
+    outline: none;
+    border: 2px solid #646669;
+    color: white;
+    resize: none;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    background-color: #646669;
+    color: #323437;
+    border: none;
+    font-family: Monospace;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #ca4754;
+    color: #323437;
+}
+
+input[name="nazwa"] {
+    margin-bottom: 20px;
+    border: #646669;
+    background-color: #646669;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    font-family: Monospace;
+    outline: none;
+}
+
+form {
+    padding: 30px 30px 20px 30px;
+    text-align: center;
+}
+
+textarea {
+    font-family: Monospace;
+    resize: none;
+    outline: none;
+    background-color: #646669;
+    color: white;
+    height: 20em;
+    width: 45em;
+}
+
+.powrot {
+    border: 2px dashed #646669;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.whole {
+    border-left: 2px dashed #646669;
+    border-right: 2px dashed #646669;
+}
+
+.raport {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: -10px;
+    color: #e2b714;
+    font-weight: bold;
+}
+
+.title {
+    color: #ca4754;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+::placeholder {
+    color: #bebebe;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each includes instead of next to each includes, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        border-bottom: 2px dashed #646669;
+    }
+    article {
+        border-top: 2px dashed #646669;
+        border-left: 2px dashed #646669;
+    }
+    textarea {
+        width: 20em;
+    }
+}

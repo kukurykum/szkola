@@ -1,0 +1,1 @@
+proste skrypty stoworzone w ramach przerabianego kursu pythona
